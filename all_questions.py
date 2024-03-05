@@ -11,7 +11,7 @@ def question1():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Agglomerative hierarchical clustering methods are more adept at handling outliers compared to k-means because outliers tend to remain as separate clusters or merge late in the clustering process, making them easier to identify and eliminate."
+    answers["(a) explain"] = "Agglomerative hierarchical clustering techniques excel in managing outliers compared to k-means, as these outliers often remain isolated or amalgamate towards the end of the clustering sequence. This trait renders outliers more detectable and simpler to exclude."
 
     # For question (b)"
 
@@ -19,25 +19,25 @@ def question1():
     answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Different runs of k-means on the same dataset may produce different clusterings, whereas agglomerative hierarchical clustering methods will always yield the same clustering unless there are ties in the proximity values."
+    answers["(b) explain"] = "Applying k-means on the identical dataset multiple instances might lead to different clustering outcomes, while agglomerative hierarchical clustering techniques guarantee uniform clustering results with each run, barring any equality in the proximity measures."
 
     # type: bool (True/False)
     answers["(c)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "K-means clustering is not necessarily faster or less memory-intensive than agglomerative hierarchical clustering, and it is not considered the most efficient clustering algorithm overall. While k-means is computationally efficient, there are more efficient algorithms available, such as the leader algorithm."
+    answers["(c) explain"] = "K-means clustering isn't always quicker or more memory-efficient compared to agglomerative hierarchical clustering, and it's not recognized as the top performer in clustering algorithms. Despite k-means being computationally advantageous, there are algorithms with greater efficiency, such as the leader algorithm, available."
 
     # type: bool (True/False)
     answers["(d)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(d) explain"] = "During a post-processing step for K-means, when a cluster is split by selecting one of its points as a new centroid and reassigning points to either the original centroid or the new centroid, the SSE (Sum of Squared Errors) typically increases because splitting increases the dispersion of points from centroids."
+    answers["(d) explain"] = "In the subsequent phase of refining K-means outcomes, the act of dividing a group by designating one member as a fresh center and redistributing members between the initial and the new centers often results in a higher SSE (Sum of Squared Errors) due to the enhanced spread of members relative to their centers."
 
     # type: bool (True/False)
     answers["(e)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = "In k-means clustering, a decrease in SSE (Sum of Squared Errors) indicates an increase in cohesion, as SSE is an inverse measure of cluster cohesion. Thus, when SSE decreases, clusters become more compact and internally cohesive."
+    answers["(e) explain"] = "In the context of k-means clustering, a reduction in SSE (Sum of Squared Errors) signifies enhanced unity within clusters, seeing that SSE inversely reflects the tightness of cluster formation. Therefore, a lower SSE points to clusters being denser and more uniformly integrated."
 
     # For question (f)
     answers["(f)"] = True  # True if the statement is correct"
@@ -46,25 +46,25 @@ def question1():
     answers["(f)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(f) explain"] = "In k-means clustering, an increase in SSB (the between sum of squares) indicates an increase in separation, as SSB is a direct measure of cluster separation. Therefore, when SSB increases, clusters become more distinct and separated from each other."
+    answers["(f) explain"] = "Within k-means clustering, a rise in SSB (Sum of Squares Between clusters) signals greater distinction among clusters, as SSB directly quantifies the degree of separation between them. Consequently, an augmentation in SSB leads to clusters that are more clearly delineated and apart from one another."
 
     # type: bool (True/False)
     answers["(g)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(g) explain"] = "Cohesion and separation are not independent in K-Means clustering. Improving cohesion (reducing SSE) necessarily improves separation (increasing SSB), as both SSE and SSB are interconnected through the constant total sum of squares (TSS)."
+    answers["(g) explain"] = "In K-Means clustering, cohesion and separation are interlinked concepts. Enhancing cohesion by lowering SSE (Sum of Squared Errors) inherently bolsters separation, evidenced by a rise in SSB (Sum of Squares Between clusters), due to the fact that SSE and SSB are components of the constant total sum of squares (TSS). This means that any improvement in cluster tightness or cohesion simultaneously leads to clearer delineation or separation among clusters."
 
     # type: bool (True/False)
     answers["(h)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(h) explain"] = "In k-means clustering, the sum of SSE (Within Sum of Squares) and BSS (Between Sum of Squares) remains constant, as the total sum of squares (TSS) remains constant throughout the clustering process. This relationship is expressed by TSS = SSE + SSB."
+    answers["(h) explain"] = "In the process of k-means clustering, the combined value of SSE (Within Sum of Squares) and SSB (Between Sum of Squares) is a constant, since the overall sum of squares (TSS) does not change during the clustering operation. This relationship is encapsulated by the equation TSS = SSE + SSB, highlighting the direct linkage between internal cluster cohesion, external cluster separation, and the total variance within the data."
 
     # type: bool (True/False)
     answers["(i)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = "In k-means clustering, an increase in cohesion (reduction in SSE) leads to an increase in separation (increase in SSB). This is because SSE is inversely related to cluster cohesion, while SSB is directly related to cluster separation."
+    answers["(i) explain"] = "In k-means clustering, reducing SSE (enhancing cohesion) leads to an increase in SSB (improving separation), due to SSE's inverse link with cohesion and SSB's direct connection to separation."
 
     return answers
 
@@ -79,19 +79,19 @@ def question2():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Each shaded circle will have one cluster centroid at its center because the clusters are too far apart for one centroid to attract points from another."
+    answers["(a) explain"] = "Each shaded sphere hosts a solitary cluster centroid within its midst, given the considerable separation between clusters, precluding any centroid from capturing points from a different cluster."
 
     # type: bool (True/False)
     answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "There will be one cluster centroid in the center of each of the two shaded regions, but the final clusters will consist of points from both shaded regions since they are close to each other and not of circular shape."
+    answers["(b) explain"] = "In each of the two shaded areas, a single cluster centroid will be positioned at the core. However, the ultimate clusters will encompass points from both shaded zones, due to their proximity and non-circular configuration."
 
     # type: bool (True/False)
     answers["(c)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "The final clustering for k-means contains an empty cluster because the centroid at 12.5 is farther away from all points than any other clusters and will become empty."
+    answers["(c) explain"] = "The ultimate outcome of the k-means clustering will include an empty cluster, as the centroid located at 12.5 is more distant from all points compared to other clusters, resulting in it being unoccupied."
 
     return answers
 
@@ -129,7 +129,7 @@ def question4():
     answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "All of circle A’s points will be assigned to the centroid in A. About ⅓ of circle B’s points (the ones in the left third of circle B) will be assigned to the centroid on the left in circle B. The remaining ⅔ of the points in B and all the points in C will be assigned to the centroid in the center of B. This will cause the right centroid in B to move to circle C since C has many more points.  In the next iteration, all points in A,B, and C will be assigned to the centroids located in their own circles and K-means will converge."
+    answers["(a) explain"] = "Every point within circle A will align with the centroid inside A. Approximately one third of the points in circle B, specifically those in its leftmost third, will adhere to the leftmost centroid in B. The other two-thirds of B's points, along with all points in circle C, will gravitate towards the centroid at B's heart. This dynamic will shift the rightmost centroid in B towards circle C, due to C's denser point population. In the subsequent iteration, points in circles A, B, and C will realign with centroids situated within their respective circles, leading to the stabilization and convergence of the K-means algorithm."
 
     # type: int
     answers["(b) Circle (a)"] = 1
@@ -141,7 +141,7 @@ def question4():
     answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Since circles A and B are close together and quite far away from circle C, the points from both A and B will be assigned to the centroid that is in A. The points in C will be split between the two centroids in C, with each centroid having 50,000 points. Since A and B have the same number of points each, the centroid in A will move between A and B. The centroids in C will move apart slightly but both will remain in C, each having half of C’s points."
+    answers["(b) explain"] = "Due to the nearness of circles A and B and their substantial distance from circle C, points from A and B will cluster around the centroid in A. Circle C's points will be evenly divided among its two centroids, with each holding 50,000 points. The centroid in A will shift between A and B, given their equal point counts. The centroids in C will move slightly but remain within C, each managing half of C's points."
 
     # type: int
     answers["(c) Circle (a)"] = 0
@@ -153,7 +153,7 @@ def question4():
     answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "Since circles A and B are close together and quite far away from circle C, the points from both A and B will be assigned to the centroid that is in A. The points in C will be split between the two centroids in C, with each centroid having 50,000 points. Since A and B have the same number of points each, the centroid in A will move between A and B. The centroids in C will move apart slightly but both will remain in C, each having half of C’s points."
+    answers["(c) explain"] = "Due to the proximity of circles A and B and their significant distance from circle C, points from A and B will cluster at the centroid in A. Circle C's points will be equally divided between its two centroids, each receiving 50,000 points. With A and B hosting an equal number of points, the centroid in A will oscillate between them. Meanwhile, the centroids within C will slightly separate but remain in C, each with half of C’s points."
 
     return answers
 
@@ -168,13 +168,13 @@ def question5():
     answers["(a)"] = {'Group A' , 'Group B'}
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Merging groups A and B because they have the smallest single link distance, indicating close proximity in their nearest points."
+    answers["(a) explain"] = "Combining clusters A and B due to their minimal single-link distance, which signifies their closest points are in near vicinity."
 
     # type: set
     answers["(b)"] = {'Group A' , 'Group C'}
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Merging groups A and C because they have the smallest complete link distance, indicating the greatest similarity between their furthest points."
+    answers["(b) explain"] = "Joining clusters A and C owing to the smallest complete-link distance between them, highlighting maximum similarity among their most distant points."
 
     return answers
 
@@ -241,13 +241,13 @@ def question7():
     answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Cluster 4 exhibits the largest clustering entropy due to higher variability in land cover types."
+    answers["(a) explain"] = "Cluster 4 shows the greatest entropy in clustering, indicating a wider variety in types of land cover."
 
     # type: string
     answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Cluster 1 shows the smallest clustering entropy attributed to its dominant representation of water land cover and minimal variability."
+    answers["(b) explain"] = "Cluster 1 exhibits the lowest entropy in clustering, due to its prevalent water land cover type and limited diversity."
 
     return answers
 
@@ -262,28 +262,28 @@ def question8():
     answers["(a) Matrix 1"] = "Z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = "Each diagonal entry appears sharply defined and predominantly blue, indicating strong cohesion within clusters. This uniformity suggests that points within a given cluster are closely grouped together, maintaining consistent cluster coherence"
+    answers["(a) explain diag entries, Matrix 1"] = "Each diagonal element is crisply outlined and largely blue, denoting significant internal cluster cohesion. This consistency indicates that points within each cluster are compactly assembled, preserving uniform cluster integrity."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = "Rows 1 and 3 correspond to clusters A and C, respectively, based on the distinct color variations in the off-diagonal entries, indicating varying distances between cluster A (or C) and all other clusters. Rows 2 and 4 align with clusters B and D, respectively, reflecting similar observations"
+    answers["(a) explain non-diag entries, Matrix 1"] = "Rows 1 and 3 are attributed to clusters A and C, respectively, discerned by the noticeable color fluctuations in the off-diagonal elements, indicating varying proximities between cluster A (or C) and all other clusters. Rows 2 and 4 correspond to clusters B and D, respectively, illustrating comparable observations."
 
     # type: string
     answers["(a) Matrix 2"] = "X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = "Notably, two diagonal entries are notably crisp and predominantly blue compared to the others, signifying superior cohesion within clusters B and C. This distinction underscores tighter intra-cluster relationships within these clusters"
+    answers["(a) explain diag entries, Matrix 2"] = "Remarkably, two diagonal elements emerge with striking clarity, predominantly adorned in a rich blue hue compared to their counterparts. This distinction underscores the robust unity within clusters B and C, emphasizing the reinforced connections among the constituent elements within these clusters."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 2"] = "Rows with less defined diagonal entries (rows 1 and 4) exhibit a range of distinct colors, reflecting varying distances from all other clusters. Conversely, rows with sharper diagonal entries display two identical colors (apart from the diagonal), indicating equidistant relationships with two clusters while maintaining a greater distance from one cluster"
+    answers["(a) explain non-diag entries, Matrix 2"] = "Rows 1 and 4, with less distinct diagonal entries, portray an array of varied colors, depicting varying degrees of proximity to all other clusters. Conversely, rows with clearer diagonal elements exhibit two uniform colors (apart from the diagonal), indicating similar distances to two clusters while maintaining a greater separation from another cluster."
 
     # type: string
     answers["(a) Matrix 3"] = "Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = "Similar to Matrix 2, two diagonal entries display heightened clarity and blue intensity, denoting robust cohesion within clusters B and C. This consistency implies stronger intra-cluster relationships within these clusters"
+    answers["(a) explain diag entries, Matrix 3"] = "Resembling the pattern observed in Matrix 2, two diagonal entries stand out with heightened clarity and a deep blue hue, indicating strong cohesion within clusters B and C. This uniformity suggests a more pronounced intra-cluster connectivity within these specific clusters."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = "Each row displays two similarly colored off-diagonal entries and one distinct color, indicating that each cluster maintains relatively closer proximity to two other clusters compared to the remaining one, highlighting distinct inter-cluster relationships"
+    answers["(a) explain non-diag entries, Matrix 3"] = "In every row, two off-diagonal entries exhibit matching colors, while the third differs, showcasing that each cluster sustains closer proximity to two other clusters compared to the remaining one. This pattern underscores the unique inter-cluster dynamics and relationships."
 
     # type: string
     answers["(b) Row 1"] = "A"
@@ -298,16 +298,16 @@ def question8():
     answers["(b) Row 4"] = "D"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 1 explain"] = "Row 1 represents Cluster A. The diagonal entry appears less distinct, indicating relatively weaker cohesion within this cluster. Additionally, all off-diagonal entries display varying colors, implying diverse distances from other clusters. Cluster A is closest to Cluster B, followed by Cluster C, and farthest from Cluster D."
+    answers["(b) Row 1 explain"] = "The initial row represents Cluster A. The diagonal element shows a less prominent presence, suggesting a relatively subdued cohesion within this particular cluster. Additionally, all off-diagonal entries showcase an array of distinct colors, indicating diverse degrees of separation from neighboring clusters. Cluster A demonstrates its closest adjacency to Cluster B, succeeded by Cluster C, while maintaining the farthest distance from Cluster D."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 2 explain"] = "Row 2 corresponds to Cluster B. The diagonal entry appears more pronounced, suggesting strong intra-cluster cohesion. Furthermore, two out of three off-diagonal entries share the same color, indicating equidistant relationships with Clusters A and C, although the proximity to Cluster A is slightly less defined. Cluster B exhibits the greatest distance from Cluster D."
+    answers["(b) Row 2 explain"] = "The second row is linked with Cluster B. The diagonal element stands out with increased clarity, implying robust internal cohesion within this cluster. Additionally, two out of the three off-diagonal elements share a similar color, suggesting equidistant associations with Clusters A and C, albeit with a slightly less defined proximity to Cluster A. Cluster B is notably distanced from Cluster D."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 3 explain"] = "Row 3 corresponds to Cluster C. The diagonal entry appears more pronounced, suggesting strong intra-cluster cohesion. Furthermore, two out of three off-diagonal entries share the same color, indicating equidistant relationships with Clusters B and D, although the proximity to Cluster D is slightly less defined. Cluster C exhibits the greatest distance from Cluster A."
+    answers["(b) Row 3 explain"] = "The third row is attributed to Cluster C. The diagonal element stands out with increased prominence, indicating robust intra-cluster cohesion. Moreover, two out of the three off-diagonal elements share identical colors, suggesting equidistant connections with Clusters B and D, albeit with a slightly less distinct proximity to Cluster D. Cluster C demonstrates the greatest separation from Cluster A."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 4 explain"] = "Row 4 corresponds to Cluster D. Similar to Cluster A, the diagonal entry appears less distinct, implying lower cohesion within the cluster. All off-diagonal entries exhibit different colors, indicating varying distances from other clusters. Cluster D is closest to Cluster C, followed by Cluster B, and farthest from Cluster A."
+    answers["(b) Row 4 explain"] = "Row 4 corresponds to Cluster D. Similar to Cluster A, the diagonal entry appears less prominent, suggesting weaker cohesion within the cluster. Each off-diagonal entry displays a distinct color, indicating varying degrees of separation from neighboring clusters. Cluster D is nearest to Cluster C, followed by Cluster B, and farthest from Cluster A."
 
     return answers
 
@@ -334,7 +334,7 @@ def question9():
     answers["(e)"] = ["Partitional", "Exclusive", "Partial"]
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = "students in the Computer Science department are grouped based on their grades in the data mining class. This follows partitional and exclusive clustering principles, ensuring distinct and non-overlapping categories for each student's grade. However, the clustering is partial because not all students may have taken the data mining class, leaving some unassigned to any grade category"
+    answers["(e) explain"] = "The Computer Science department organizes students based on their achievements in the data mining course. This classification follows partitional and exclusive clustering principles, guaranteeing distinct and mutually exclusive categories for each student's grade. However, the clustering is partial since not all students may have participated in the data mining course, leaving some without assignment to any grade category."
 
     return answers
 
@@ -346,25 +346,25 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = "DBSCAN cannot effectively identify patterns due to high noise density."
+    answers["(a) Figure (a)"] = "DBSCAN struggles to accurately detect patterns in the presence of excessive noise density."
 
     # type: string
-    answers["(a) Figure (b)"] = "DBSCAN can identify patterns as they have higher density compared to noise."
+    answers["(a) Figure (b)"] = "DBSCAN excels at identifying patterns characterized by higher density in contrast to noise."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "DBSCAN suitability based on density distribution."
+    answers["(a) explain"] = "The suitability of DBSCAN depends on the distribution of data density."
 
     # type: string
-    answers["(b) Figure (a)"] = "K-means cannot effectively segment facial features due to uniform density assumption."
+    answers["(b) Figure (a)"] = "The uniform density assumption of K-means limits its effectiveness in segmenting facial features accurately."
 
     # type: string
-    answers["(b) Figure (b)"] = "K-means can segment facial features with a proper number of clusters, but may include background points."
+    answers["(b) Figure (b)"] = "With an appropriate number of clusters, K-means can segment facial features effectively, although it may inadvertently include background points."
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "K-means suitability based on cluster assumption."
+    answers["(b) explain"] = "The suitability of K-means hinges on the assumption of distinct clusters within the data."
 
     # type: string
-    answers["(c)"] = "spectral clustering or Gaussian mixture models or Reciprocal density-based DBSCAN can effectively segment facial features in Figure (a)."
+    answers["(c)"] = "Spectral clustering, Gaussian mixture models, or Reciprocal density-based DBSCAN are capable of accurately segmenting facial features presented in Figure (a)."
 
     return answers
 
